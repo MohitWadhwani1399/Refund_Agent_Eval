@@ -3,17 +3,17 @@ users_data = {
     "user123": {
         "book": {
             "price": 23,
-            "purchase_date": "2026-10-5"
+            "purchase_date": "2026-10-05"
         },
         "pen": {
             "price": 7,
-            "purchase_date": "2026-10-3"
+            "purchase_date": "2026-10-03"
         }
     },
     "user124": {
         "notebook": {
             "price": 12,
-            "purchase_date": "2026-10-6"
+            "purchase_date": "2026-10-06"
         }
     },
     "user125": {
@@ -23,17 +23,17 @@ users_data = {
         },
         "ruler": {
             "price": 5,
-            "purchase_date": "2026-9-24"
+            "purchase_date": "2026-09-24"
         }
     },
     "user126": {
         "backpack": {
             "price": 45,
-            "purchase_date": "2026-10-2"
+            "purchase_date": "2026-10-02"
         },
         "water_bottle": {
             "price": 18,
-            "purchase_date": "2026-7-25"
+            "purchase_date": "2026-07-25"
         },
         "lunch_box": {
             "price": 14,

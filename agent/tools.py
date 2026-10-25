@@ -32,7 +32,7 @@ def calculate_right_refund_amount(user:str,items:list[PurchaseItem]) -> float:
             if user_data.get(item.name):
                 item_name = item.name
                 item_price = user_data.get(item_name).get("price")
-                item_purchase_date = date.fromisoformat(item.purchase_date)
+                item_purchase_date = date.fromisoformat(user_data.get(item_name).get("purchase_date"))
                 current_date = date.today()
                 days_since_purchase = (current_date - item_purchase_date).days
             
@@ -60,3 +60,7 @@ def check_today_date(user:str) -> str:
         return {"status": "There was no username found"}
     logging.info("Using check_today_date tool to get current date")
     return date.today().isoformat()
+
+book = PurchaseItem(name="book")
+pen = PurchaseItem(name="pen")
+print(calculate_right_refund_amount.invoke({"user": "user123", "items": [book, pen]}))
