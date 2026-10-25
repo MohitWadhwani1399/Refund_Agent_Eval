@@ -65,7 +65,7 @@ book = PurchaseItem(name="book")
 pen = PurchaseItem(name="pen")
 
 ##  Invoke function takes input as dictionary and returns the output of the function
-print(calculate_right_refund_amount.invoke({"user": "user123", "items": [book, pen]}))
-print(check_today_date.invoke({"user": "user123"}))
-print(issue_refund_ticket.invoke({"user": "user123", "refund_amount": 30.0}))
+# print(calculate_right_refund_amount.invoke({"user": "user123", "items": [book, pen]}))
+# print(check_today_date.invoke({"user": "user123"}))
+# print(issue_refund_ticket.invoke({"user": "user123", "refund_amount": 30.0}))
 
