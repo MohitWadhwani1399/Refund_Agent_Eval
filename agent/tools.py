@@ -41,11 +41,11 @@ def calculate_right_refund_amount(user:str,items:list[PurchaseItem]) -> float:
         return total_refund
 
 @tool
-def issue_refund_ticker(user:str,refund_amount:float) -> str:
+def issue_refund_ticket(user:str,refund_amount:float) -> str:
     """
     This tool takes user's name and the refund amount and send a refund ticket to the right team
     """
-    logging.info(f"Using issue_refund_ticker tool on user: {user} to issue refund ticket with amount: ${refund_amount}")
+    logging.info(f"Using issue_refund_ticket tool on user: {user} to issue refund ticket with amount: ${refund_amount}")
     if not users_data.get(user):
         return {"status": "There was no username found"}
     else:
@@ -63,4 +63,9 @@ def check_today_date(user:str) -> str:
 
 book = PurchaseItem(name="book")
 pen = PurchaseItem(name="pen")
+
+##  Invoke function takes input as dictionary and returns the output of the function
 print(calculate_right_refund_amount.invoke({"user": "user123", "items": [book, pen]}))
+print(check_today_date.invoke({"user": "user123"}))
+print(issue_refund_ticket.invoke({"user": "user123", "refund_amount": 30.0}))
+
