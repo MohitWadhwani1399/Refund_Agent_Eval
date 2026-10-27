@@ -2,7 +2,7 @@
 users_data = {
     "user123": {
         "book": {
-            "price": 23,
+            "price": 21,
             "purchase_date": "2026-10-05"
         },
         "pen": {
