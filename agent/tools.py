@@ -52,12 +52,10 @@ def issue_refund_ticket(user:str,refund_amount:float) -> str:
         return f"Refund ticket for {user} has been issued successfully for the amount of ${refund_amount}"
 
 @tool
-def check_today_date(user:str) -> str:
+def check_today_date() -> str:
     """
     This tool returns the current date in YYYY-MM-DD format
     """
-    if user not in users_data:
-        return {"status": "There was no username found"}
     logging.info("Using check_today_date tool to get current date")
     return date.today().isoformat()
 
