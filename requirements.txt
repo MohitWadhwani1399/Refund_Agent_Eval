@@ -2,3 +2,4 @@ langchain
 langchain-openai
 dotenv
 deepeval
+portalocker[win32]
